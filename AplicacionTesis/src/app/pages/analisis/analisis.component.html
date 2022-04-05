@@ -1,0 +1,119 @@
+<br>
+<!--
+<div class="container">
+    <div class="col-12">
+        <label class="form-label text-white">Candidato</label>
+        <input type="text" class="form-control" id="candidato" placeholder="Ingrese el nombre del candidato" #buscarTexto>
+        <label class="form-label text-white">Cantidad de topicos</label>
+        <input type="text" class="form-control" id="cantidad" placeholder="Ingrese la cantidad de topicos que desea analizar" #buscarCantidad>
+
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="btn-group btn-group-lg col text-center">
+                <button (click)="extraer(buscarTexto.value)" class="btn btn-dark text-white" type="button ">Extraer</button>
+                <button (click)="analizar(buscarTexto.value,buscarCantidad.value)" class="btn btn-dark text-white" type="button ">Analizar</button>
+            </div>
+        </div>
+    </div>
+
+  <select class="form-select" [(ngModel)]="selected" (change)="selected">
+                  <option *ngFor="let n of lista">{{ n }}</option>
+                </select>
+                {{ selected }}
+
+
+</div>
+-->
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Extraer</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Analizar</button>
+    </li>
+  </ul>
+<div class="container">
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+      <!------------------------------------------------------------------->
+      <br>
+      <div class="col-12">
+        <input type="text" class="form-control" id="idCandidatoTwitter" placeholder="Ingrese el nombre de usuario del candidato en Twitter" #idTwitterTexto>
+        <br>
+        <input type="text" class="form-control" id="idCandidatoFacebook" placeholder="Ingrese el nombre de usuario del candidato en Facebook" #idFacebookTexto>
+        <br>
+        <input type="text" class="form-control" id="nombrecandidato" placeholder="Ingrese el nombre del candidato" #nombreCandidato>
+      </div>
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="btn-group btn-group-lg col text-center">
+            <button (click)="extraer(idTwitterTexto.value,idFacebookTexto.value,nombreCandidato.value)" class="btn btn-dark text-white" type="button ">Extraer</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------------------------------------------------------------->
+    </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">.
+
+      <!-- ----------------------------------------------------------------->
+
+
+      <div class="col-12">
+        <select class="form-select"  [(ngModel)]="selected" (change)="selected">
+          <option *ngFor="let n of lista">{{ n }}</option>
+        </select>
+        <label class="form-label text-white">Cantidad de topicos</label>
+        <input type="number" class="form-control" id="cantidad" placeholder="Ingrese la cantidad de topicos que desea analizar" #buscarCantidad>
+      </div>
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="btn-group btn-group-lg col text-center">
+            <button (click)="analizar(selected,buscarCantidad.value)" class="btn btn-dark text-white" type="button ">Analizar</button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ----------------------------------------------------------------->
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
+
+
+
+
+
+
+
+

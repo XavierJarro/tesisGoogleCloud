@@ -1,0 +1,76 @@
+<div class="container">
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1 class="animated fadeIn fast text-center ">
+
+    Desarrollo de una plataforma digital para el análisis de tendencias políticas en las redes sociales Twitter y Facebook usando técnicas de procesamiento de lenguaje natural.</h1>
+
+  <br>
+  <h3 class="featurette-heading" >Problema de Estudio </h3>
+  <p class="lead" style="text-align:justify">
+    Cada cuatro años en Ecuador se realizan las elecciones presidenciales, por lo que se postulan varios candidatos que representan a distintos partidos políticos, en donde cada uno de los candidatos plantean una serie de propuestas políticas, por consecuencia
+    esto genera en los votantes cierta aceptación o rechazo hacia dicho candidato. En el presente se utiliza la tecnología, especialmente las redes sociales como instrumento de promoción de campañas políticas, lo que permite que las personas puedan
+    tener en consideración las diferentes propuestas que cada candidato ofrece. La forma de hacer política cambió desde la era digital. Pero lo importante es reconocer que hoy en día también está cambiando debido al uso de las redes sociales. Si antes
+    lo único que se hacía era crear anuncios en medios digitales, ahora, se crean campañas que tienen como pieza clave las redes sociales. (Antevenio, 2019) Los partidos políticos hacen vídeos en directo, publican streamings en sus cuentas de redes
+    sociales o incluso, responden comentarios de ciudadanos en Twitter. Lo que les funciona ahora para los candidatos políticos es gestionar una buena estrategia de social media. (Antevenio, 2019) Cualquier candidato político, ya sea local, estatal
+    o nacional, puede aprovechar al máximo la estrategia social de su campaña y desarrollar increíbles campañas digitales de marketing político. Las campañas políticas son esencialmente plataformas de marca. La eficacia con la que sus acciones resuenan
+    y el cuidado con el que sostienen la imagen que desean proyectar es la clave de su campaña. (Antevenio, 2019) Con base a esta información podemos proponer que los candidatos políticos cuenten con herramientas que permitan realizar el análisis
+    de sus campañas digitales en referencia de las redes sociales de Facebook y Twitter, así teniendo conocimiento de como los usuarios de estas redes sociales difieren en sus propuestas y obteniendo una presunta aceptación.
+  </p>
+  <hr class="featurette-divider">
+  <h3 class="featurette-heading" >Justificación</h3>
+  <p class="lead" style="text-align:justify">Debido al incremento del uso de las redes sociales en Ecuador, los candidatos políticos promocionan sus campañas en las redes sociales ya que las personas utilizan de manera diaria, por lo cual pueden visualizar o buscar diferentes novedades o tendencias
+    que suceden en el día a día relacionado con la política, en donde pueden acceder de una manera rápida a la información que deseen de los diferentes candidatos políticos. Cada persona con ayuda de las redes sociales son capaces de dar una opinión
+    de lo que piensan acerca de cada candidato y su campaña política. Lo que no se puede saber es la aceptación o rechazo que se tiene hacia un candidato político, para ello nuestro proyecto se enfoca en detectar estas supuestas tendencias políticas,
+    realizando un análisis de la información posteada por las diferentes cuentas de los usuarios de la redes sociales mediante el procesamiento de lenguaje natural. Con la finalidad de implementar una aplicación web donde se presente la visualización
+    de datos de cada candidato.
+  </p>
+  <hr class="featurette-divider">
+  <h3 class="featurette-heading" > Grupo Objetivo</h3>
+  <p class="lead" style="text-align:justify">El grupo objetivo serán los candidatos políticos que se postulan por un cargo público, grupo político de los jefes de campaña y los encargados de campaña digital en redes sociales Facebook y Twitter.
+  </p>
+  <hr class="featurette-divider">
+  <h3 class="featurette-heading">
+    Objetivos.
+  </h3>
+  <h4 class="featurette-heading">General</h4>
+  <p class="lead" style="text-align:justify">Obtener y visualizar la aceptación política en las redes sociales Twitter y Facebook de candidatos utilizando técnicas de procesamiento de lenguaje natural.
+  </p>
+  <h4 class="featurette-heading" >
+    Específicos
+  </h4>
+  <p class="lead" style="text-align:justify">OE1. Recopilar información de las redes sociales relacionadas a los candidatos políticos mediante algoritmos de minería de datos.</p>
+  <p class="lead" style="text-align:justify">OE2. Detectar y clasificar en tópicos la información recopilada en las redes sociales con ayuda del algoritmo LDA.</p>
+  <p class="lead" style="text-align:justify">OE3. Aplicar el algoritmo RNN para el análisis de sentimientos para la presunta aceptación política usando la información recopilada de redes sociales.</p>
+  <p class="lead" style="text-align:justify">OE4. Desarrollar y desplegar una aplicación web para la gestión y visualización del análisis de la aceptación política de los candidatos.</p>
+  <p class="lead" style="text-align:justify">OE5. Realizar la validación de la aplicación.</p>
+  <hr class="featurette-divider">
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Propuesta de la solución</h2>
+      <p class="lead" style="text-align:justify" >El desarrollo del proyecto consta de 2 partes principales. En primer lugar, a través de algoritmos de minería de datos, extraer información de las redes sociales Facebook y Twitter, aplicar el algoritmo LDA para clasificar y separar tópicos de la
+        información para luego aplicar el algoritmo RNN para el análisis de sentimientos y determinar la presunta aceptación política del candidato.
+      </p>
+    </div>
+    <div class="col-md-5">
+      <img class="featurette-image img-fluid mx-auto"  style="width: 400px; height: 400px;" src="assets/img/arquitectura.png">
+    </div>
+  </div>
+  <hr class="featurette-divider">
+  <p  class="lead" style="text-align:justify">En la ilustración anterior se observa cual es la interacción de los diferentes tipos de usuarios, con los elementos que forman parte del sistema y cómo aporta cada usuario para su funcionamiento.</p>
+  <p  class="lead" style="text-align:justify"> El primer actor involucrado dentro del sistema, son los usuarios de redes sociales, es decir, quienes las usan ya sea a través de un celular o de una página web, entre otros dispositivos que posibiliten el acceso a estas.</p>
+  <p  class="lead" style="text-align:justify">La información que involucre a un determinado usuario en sus redes sociales serán los datos de entrada para nuestro sistema, esta información será extraída a través de algoritmos de minería de datos en redes sociales y por medio del internet llegará
+    al servidor Web misma que será procesada por el algoritmo LDA y una vez que concluya el análisis en el algoritmo, éste nos devolverá resultados en los que se clasificaron y se separaran por tópicos la información por parte de los usuarios de redes
+    sociales ante un candidato político en específico. Una vez ya obtenida la clasificación de la información con ayuda del algoritmo LDA, lo siguiente será aplicar el algoritmo RNN, éste analizara los sentimientos de la información del candidato
+    y nos devolverá los resultados en los que se definirá la presunta aceptación que tiene el candidato.</p>
+  <p  class="lead" style="text-align:justify">El segundo actor que interviene en el funcionamiento del sistema, son los usuarios de nuestra aplicación web, quienes hagan uso de ella; para usar la aplicación tiene la posibilidad de usarla con un registro de datos personales de modo que tenga una
+    cuenta de usuario dentro de nuestro sistema.</p>
+  <p  class="lead" style="text-align:justify">Los usuarios tendrán que registrarse en nuestro sistema, en donde tendrán que ingresar sus datos personales en una ventana de registro en la web. La información ingresada para el registro del usuario se guardará en un servidor de Base de Datos relacional,
+    el mismo que albergará la información de todos los usuarios que se registren dentro de nuestro sistema. Una vez que el usuario(candidato) se registre, podrá ingresar a la aplicación web mediante su nombre de usuario y contraseña.</p>
+  <p  class="lead" style="text-align:justify">Una vez que el usuario haya ingresado en la aplicación web se ejecutará el análisis de datos, en donde se conectará a nuestro algoritmo de extracción de información y se obtendrá la información referente al candidato logueado. Esta información irá
+    al algoritmo LDA como dato de entrada, donde éste clasificará por tópicos la información. Después de haber realizado la clasificación con el algoritmo LDA se utilizará el algoritmo RNN para realizar el análisis de sentimientos de la información
+    para determinar la presunta aceptación que tienen los usuarios de las redes sociales Facebook y Twitter. Una vez ya obtenida la información analizada nuestra aplicación web se encargará de mostrar mediante una herramienta de visualización de datos
+    la presunta aceptación del candidato político. La información analizada se guardará dentro de nuestro servidor de BD en el que se almacenará información relacionada al análisis ejecutado</p>
+</div>
